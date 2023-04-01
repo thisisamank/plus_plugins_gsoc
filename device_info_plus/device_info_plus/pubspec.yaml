@@ -1,0 +1,32 @@
+name: device_info_plus
+description: A Very Good Project created by Very Good CLI.
+version: 0.1.0+1
+publish_to: none
+
+environment:
+  sdk: ">=2.18.0 <3.0.0"
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        default_package: device_info_plus_android
+      ios:
+        default_package: device_info_plus_ios
+
+dependencies:
+  flutter:
+    sdk: flutter
+  device_info_plus_android:
+    path: ../device_info_plus_android
+  device_info_plus_ios:
+    path: ../device_info_plus_ios
+  device_info_plus_platform_interface:
+    path: ../device_info_plus_platform_interface
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  mocktail: ^0.3.0
+  plugin_platform_interface: ^2.0.0
+  very_good_analysis: ^3.1.0
